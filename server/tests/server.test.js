@@ -19,9 +19,9 @@ describe("POST /Todos" , ()=>{
     .send({text:text})
     .expect(200)
     .expect((res)=>{
-      expect(res.body.text).toBe(text)
+      expect(res.body.text).toBe(text);
     })
-    .end( (err, res)=>{
+    .end((err, res)=>{
       if(err)
       {
         return done(err);
