@@ -56,3 +56,23 @@ describe("POST /Todos" , ()=>{
 
   })
 });
+
+
+
+
+
+describe("GET /Todos" , ()=>{
+  it('should return all todos' , (done)=>{
+
+   request(app).get("/todos").expect(200).
+   expect((res)=>{
+      expect(res.todos).toBeA('array');
+   })
+   .end(done);
+
+
+
+  });
+
+
+});
