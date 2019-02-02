@@ -15,8 +15,10 @@ if(env=="development" || env=="test")
 }
 else
 {
-   process.env.dbUsername =   config["production"].username;
-   process.env.dbPassword =   config["production"].password;
+   // process.env.dbUsername =   config["production"].username;
+   process.env.dbUsername = "mudassermongo94";
+   // process.env.dbPassword =   config["production"].password;
+   process.env.dbPassword =   "mudassermongo94";
 }
 
 // if(env=="development")
