@@ -13,11 +13,7 @@ var config = require("./config.json");
   });
 
 }
-else
-{
-   process.env.dbUsername = "mudassermongo94";
-   process.env.dbPassword =   "mudassermongo94";
-}
+
 
 // if(env=="development")
 // {
