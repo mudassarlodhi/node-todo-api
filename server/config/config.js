@@ -1,10 +1,10 @@
 
 var env = process.env.NODE_ENV || "development";
 
-var config = require("./config.json");
+
 if(env=="development" || env=="test")
 {
-
+var config = require("./config.json");
   var envConfig = config[env];
   // console.log(envConfig.PORT);
 
@@ -15,9 +15,7 @@ if(env=="development" || env=="test")
 }
 else
 {
-   // process.env.dbUsername =   config["production"].username;
    process.env.dbUsername = "mudassermongo94";
-   // process.env.dbPassword =   config["production"].password;
    process.env.dbPassword =   "mudassermongo94";
 }
 
